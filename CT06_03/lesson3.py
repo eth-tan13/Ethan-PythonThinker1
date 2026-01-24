@@ -1,3 +1,4 @@
+import math
 # Task 2
 # variable1 = 3
 # variable2 = 5
@@ -64,4 +65,31 @@
 # subtotal = round(subtotal, 2)
 # print(subtotal)
 
-# 
+# Task 6
+
+# distance_a = 75
+# distance_b = 100
+# print(abs(distance_a - distance_b))
+
+# movement = -55
+# distance = abs(movement)
+# print(distance)
+
+# Task 7
+
+# bakery = 9.8
+# bread = 1
+# max_bread = math.floor(bakery / bread)
+# print(max_bread)
+
+# orange = 27
+# gift_bag = 4
+# min_gift_bags = math.ceil(orange / gift_bag)
+# print(min_gift_bags)
+
+# Task 8
+
+# n = math.pi
+# circumference = n * 100
+# circumference = round(circumference, 2)
+# print(circumference)

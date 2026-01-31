@@ -63,6 +63,8 @@
 #     print(i)
 # print("Boo!")
 
+# Task 7
+
 # print("Give me two numbers!")
 # num1 = int(input("First number:\n"))
 # num2 = int(input("Second number:\n"))

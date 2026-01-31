@@ -96,11 +96,11 @@
 
 # Task 8
 
-minutes = int(input("Give me a number of minutes\n"))
-seconds = int(input("Give me a number of seconds\n"))
-min_convert_to_sec = minutes * 60
-total_sec = min_convert_to_sec + seconds
-minutes = str(minutes)
-seconds = str(seconds)
-total_sec = str(total_sec)
-print("The amount of seconds in " + minutes + " minute and " + seconds + " seconds is " + total_sec)
+# minutes = int(input("Give me a number of minutes\n"))
+# seconds = int(input("Give me a number of seconds\n"))
+# min_convert_to_sec = minutes * 60
+# total_sec = min_convert_to_sec + seconds
+# minutes = str(minutes)
+# seconds = str(seconds)
+# total_sec = str(total_sec)
+# print("The amount of seconds in " + str(minutes) + " minutes and " + str(seconds) + " seconds is " + str(total_sec))

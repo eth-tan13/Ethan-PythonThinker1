@@ -103,6 +103,7 @@
 # print(f"The average marks of your class is {average}")
 
 # Task 11
+
 # num = input("Give me a number\n")
 # for i in range(int(num)):
 #     i = i + 1

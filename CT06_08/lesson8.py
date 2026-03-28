@@ -117,16 +117,16 @@ import random
 
 # Challenge 2
 
-import random
-num1 = random.randint(1, 100)
-print("Guess the number between 1 and 100. You have 5 attempts.")
-for i in range(5):
-    print(f"Attempt {i + 1}/5")
-    guess = int(input("Guess the number:\n"))
-    if guess == num1:
-        print("You guessed the correct number!")
-        break
-    else:
-        print(f"Your guess was too high: {guess > num1}")
-        print(f"Your guess was too low: {guess < num1}")
-print(f"Game Over. The number was: {num1}")
+# import random
+# num1 = random.randint(1, 100)
+# print("Guess the number between 1 and 100. You have 5 attempts.")
+# for i in range(5):
+#     print(f"Attempt {i + 1}/5")
+#     guess = int(input("Guess the number:\n"))
+#     if guess == num1:
+#         print("You guessed the correct number!")
+#         break
+#     else:
+#         print(f"Your guess was too high: {guess > num1}")
+#         print(f"Your guess was too low: {guess < num1}")
+# print(f"Game Over. The number was: {num1}")

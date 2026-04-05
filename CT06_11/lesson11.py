@@ -1,5 +1,17 @@
 # print("Hello from lesson 11")
 
+# Recap 1
+
+# px = int(input("Give me the price of the item that you are buying!\n"))
+# if px <= 5:
+#     print("Sounds good!")
+# elif px <= 50:
+#     print("Are you sure you need this?")
+# elif px <= 500:
+#     print("Where are you getting this money from?!")
+# else:
+#     print("Don't even think about it!")
+
 # Task 1
 
 # rider1 = int(125)
@@ -80,6 +92,19 @@
 #         print("Correct password. Access Granted.")
 #         break
 
+# Task 10
+
+# print("What do you want to eat?")
+# burger = input("A burger? (Yes/No)\n").lower()
+# drink = input("A drink? (Yes/No)\n").lower()
+# fries = input("Some fries? (Yes/No)\n").lower()
+# if burger == "yes" and fries == "yes" and drink == "no":
+#     print("Won't you get thirsty?")
+# elif burger == "no" and fries == "no" and drink == "no":
+#     print("GET OUT OF THE RESTAURANT. NOW.")
+# else:
+#     print("Ok, order registered!")
+
 # Task 11
 
 # username = "John123"
@@ -92,3 +117,10 @@
 #     print("Username or password is incorrect.")
 # else:
 #     print("Access Denied.")
+
+# Task 12
+
+game_status = "active"
+if game_status == "active":
+    print("Game in progress...")
+    

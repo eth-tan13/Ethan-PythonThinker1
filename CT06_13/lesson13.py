@@ -1,4 +1,4 @@
-import time
+import time, random
 # print("Hello from lesson 13")
 
 # Recap 1
@@ -93,3 +93,61 @@ import time
 #         fruits.append(added_item)
 # for i in range(len(fruits)):
 #     print(f"I have bought: {fruits[i]}")
+
+# Task 4A
+
+# fruits = ["apples", "bread", "carrots", "dates", "eggs", "flour", "grapes", "honey"]
+# while True:
+#     added_item = input("What are the items that could be found in your online catalogue? (enter end when done)\n").lower()
+#     if added_item == "end":
+#         break
+#     else:
+#         fruits.append(added_item)
+
+# Task 4B
+
+# while True:
+#     item = input("Good day! May I know what you are looking for in our online catalogue? (enter end when done)\n").lower()
+#     if item == "end":
+#         print("Have a nice day!")
+#         break
+#     elif item in fruits:
+#         print("Yes we have that!")
+#     else:
+#         print("Sorry, we don't have that.")
+
+# Task 5
+
+# for i in range(10):
+#     num = random.randint(1, 9999)
+#     print(f"Winning #{i+1}: {num}")
+#     time.sleep(0.5)
+
+# random_list = []
+# for i in range(10):
+#     num = random.randint(1, 9999)
+#     random_list.append(num)
+# for i in range(len(random_list)):
+#     print(f"Winner #{i+1}: {random_list[i]}")
+#     time.sleep(0.5)
+
+# Task 6
+
+# toppings = ["Mushrooms", "Pepperoni", "Pineapple", "Sausage", "Onions", "Cheese", "Tomato Sauce"]
+# customer_topping_choice = []
+# print("Welcome to Builder Brother's Pizza! Here are the list of toppings you could choose from for your pizza.")
+# time.sleep(0.5)
+# for i in range(len(toppings)):
+#     print(f"{i+1}. {toppings[i]}")
+#     time.sleep(0.5)
+# print("Time to choose the toppings for your pizza! (Please choose toppings by number and enter end when done)")
+# while True:
+#     topping_choice = input("").lower()
+#     if topping_choice == "end":
+#         break
+#     else:
+#         customer_topping_choice.append(toppings[int(topping_choice)-1])
+# print("Order taken!")
+# for i in range(len(customer_topping_choice)):
+#     time.sleep(0.5)
+#     print(f"Topping choice #{i+1}. {customer_topping_choice[i]}")

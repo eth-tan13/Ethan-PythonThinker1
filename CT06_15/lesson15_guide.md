@@ -1,174 +1,138 @@
-# Lesson 15 - Functions
+# Lesson 15 - Introduction to Turtle Library
 
-# Recap 1: Turtle drawing
-**Recap 1a**:
-Using the 'turtle' library, create a 200x200 window
+## Task 1: Creating a window​
+### 1a​
+By importing the ‘turtle’ library and using the following functions, create ablank window that stays:​
+- turtle.Screen()​
+- .mainloop()​
 
-1. Import 'turtle' library
-2. Using '.setup()', create a window 200 in width and 200 in height
-3. Add a '.mainloop()' function to keep the window open
+### 1b​
+Modify your code to create a window that is 600 in width and 400 in height​
 
-**Recap 1b**:
-Modify your previous code to create a blue arrow as your turtle.
+Hint:​ ???.setup(width=???, height=???)​
 
-1. Create a turtle called "artist" using 'turtle.Turtle()'
-2. Using '.shape()', change the turtle shape to "arrow"
-3. Using '.color()', change the turtle color to "blue"
+## Task 2: Creating a Turtle​
+By modifying the code you have done previously, create the following agents:​
 
-**Recap 1c**:
-Modify your previous code to draw the shape of a compass rose (shown
-on screen)
+Note: Your new code must be between the turtle.screen() and .mainloop()
+function.​
 
-1. Use '.penup()' and position turtle to (0, 0) using '.goto()'
-2. Point turtle towards North ("90") using '.seth()'
-3. Use '.pendown()' and draw "60" towards North
-4. Using '.right()', turn turtle 90 degrees to the right 
-5. Using a 'for' loop, draw a circle by moving 1 step each time
-   before turning 1 degree to the right for 360 times.
+### 2a​
+Create an orange turtle​
 
-**Recap 1d**:
-Modify your previous code to print the position of your turtle at the
-end of the drawing.
+1. Using ‘import’, import the ‘turtle’ library​
 
-1. Using '.xcor()' and 'ycor()', print onto the console your turtle's
-   last coordinates in the following format:
+2. Using the ‘turtle.Turtle()’ function, create an agent called “turtle”​
 
-   "Current turtle position: <x>, <y>"
+3. Using the ‘.shape()’ function, set the shape of the “turtle” agent to a turtle​
 
----------------------------------------------------------------------
+4. Using the ‘.fillcolor()’ function, turn “turtle” orange.​
 
-# Task 1: Self-introduction
-You are at a party, and you expect to see your friend Ethan and 3 of
-his friends you have never met before. They are Ben, Gracie, and
-Javior.
+### 2b
+Create a turtle object as a green square​
 
-Write a program (with or without functions) that will ask the user
-for their name and print 1 of 3 ways to greet the person:
-1. If the person is Ethan, greet him by saying:
-        "Hi Ethan. How are you?"
-2. If the person is either Ben, Gracie, or Javior, greet them by
-   saying:
-        "Hi there!"
-        "My name is Freddo"
-        "I like to swim and eat chicken wings!"
-        "Nice to meet you!"
-3. If the person is none of the above, say:
-        "I don't think you belong here..."
+1. Using ‘import’, import the ‘turtle’ library​
 
----------------------------------------------------------------------
+2. Using the ‘turtle.Turtle()’ function, create an agent called “square”​
 
-# Task 2: Square
-Using the 'turtle' library, create a function that draws a square.
-Use the function you have created to draw the pattern shown on the
-screen.
+3. Using the ‘.shape()’ function, set the shape of the “turtle” agent to a square​
 
-1. Import the 'turtle' library
-2. Set up the screen using 'turtle.Screen()'
-3. Create a function, "draw_square" that will draw a 20x20 square
-4. Using 'for' loops and the "draw_square" function you have created,
-   draw the pattern shown on the screen.
-5. You will have to reposition your turtle before calling the
-   "draw_square" function each time.
+4. Using the ‘.fillcolor()’ function, turn “turtle” green.
 
----------------------------------------------------------------------
+## Task 3: Drawing​
+Given the number of sides and each interior angle, draw each of the following shapes using a loop and a selection of the following functions:​
 
-# Task 3: Increment Counter
-Create a function that will increase the 'counter' variable by 1 each
-time it is called.
+1. .seth()​
+2. .up()​
+3. .down()​
+4. .forward()​
+5. .backward()​
+6. .left()​
+7. .right()​
 
-1. Create a 'counter' variable and assign it '0'
-2. Define a function 'increment_counter()':
-        a. Declare 'counter' as 'global'
-        b. Add 1 to 'counter'
-3. Test your program out by calling the 'increment_counter()' function
-4. 3 times before printing out the value of the 'counter' variable.
+### 3a
+Draw a line​
+Number of sides: 1​
+Interior angle: NA​
 
-Your output should be "3"
+### 3b
+Draw a triangle​
+Number of sides: 3​
+Interior angle: 120
 
----------------------------------------------------------------------
+### 3c
+Draw a square​
+Number of sides: 4​
+Interior angle: 90
 
-# Task 4: Square to Square
-Use a function with parameters to draw 7 squares to form the pattern
-shown on the screen.
+### 3d
+Draw a pentagon​
+Number of sides: 5​
+Interior angle: 72
 
-1. Import the 'turtle' library
-2. Create a 400x400 screen
-3. Create a function "draw_square" with a "size" parameter
-4. The "draw_square" function will draw a square of size*size around
-   the (0,0) coordinate.
-5. Within a 'for' loop, use the draw_square function you have created
-   to draw 7 squares around the (0,0) coordinate with the following
-   sizes:
-        50, 100, 150, 200, 250, 300, 350
+### 3e
+Draw a hexagon​
+Number of sides: 6​
+Interior angle: 60
 
----------------------------------------------------------------------
+### 3f
+Draw a circle​
+Number of sides: 360​
+Interior angle: 1
 
-# Task 5: Double the Number
-Create a function that takes in a number and doubles it
+## Task 4: Creating a Crosshair​
+Write a program that moves the turtle to draw a horizontal line across the middle of the screen and then a vertical line down the centre of the screen, creating a crosshair pattern.​
 
-1. Create a function named 'doubleNumber()'
-2. The function should return the doubled number
-3. Using the 'doubleNumber()' function, print the doubles of the
-   following numbers:
-    4
-    9
-    1530
-    284
+1. Import the ‘turtle’ library​
 
----------------------------------------------------------------------
+2. Using ‘turtle.Screen()’, create a turtle screen and set the window size to 600x400.​
+Hint: ???.setup(width=???, height=???)​
 
-# Task 6: Greetings III
-Create a function that takes in a name and returns a greeting
+3. Create a turtle, and use ‘.penup()’ to lift the pen​
 
-1. Create a function named 'greet()'
-2. The function should return a greeting
-    Example: "Hello there <name>!"
-3. Ask the user for their name
-4. Using the 'greet()' function, print the greeting
+4. Use ‘.goto()’ to position your turtle at x = -300 and y = 0​
 
-----------------------------------------------------------------------
+5. Use ‘.pendown()’ and use ‘.setx()’ to set your turtle’s x position to x =300​
 
-# Task 7: Even or Odd? III
-Create a function that takes in a number and returns whether it is
-even
+6. ‘.penup()’ and using ‘.goto()’, reposition your turtle to x = 0 and y =200​
 
-1. Create a function named isEven()
-2. If the number is even, the function should return True
-3. If the number is odd, the function should return False
-4. Using the 'isEven()' function, loop through a list of numbers and
-   print them out in this format:
-    "3 is an odd number"
-    "9 is an odd number"
-    "2 is an even number"
+7. Use ‘.pendown()’ and ‘.sety()’ to set your turtle’s y position to y = -200​
 
-----------------------------------------------------------------------
-   
-# Task 8: Age Group
-Create a function that will take in someone's age and return either
-'Child' (Below 13), 'Teen' (14-20), 'Adult' (21-64), or
-'Senior' (65 and above) based on the age provided.
+8. End off with a ‘.mainloop()’ function to keep your window open​
 
-1. Define the function 'ageGroup()' with one parameter: 'age'.
-2. Use 'if-elif-else' statements to return the appropriate age group
-   based on the 'age' parameter
+## Task 5: Random Points​
+Write a program where the turtle moves to 10 random positions on the screen, drawing a small square at each spot. Display the x and y coordinates of each position next to the squares.​
 
-----------------------------------------------------------------------
+1. Import ‘turtle’ and ‘random’ library​
 
-# Task 9: Calling a function within a function
-**Task 9a**:
-Create a function 'square()' that will take in a number and return
-the squared value of the number. Squared is when the number is
-multiplied by itself.
+2. Create a 600x600 turtle screen using ‘turtle.Screen()’ and ‘.setup(width=,height=)’ function​
 
-For example, "5 squared" is 5x5, giving us 25.
+3. Within a ‘for’ loop,​
 
-Example:
-square(3) >>> 9
+    1. Create ‘x’ variable and assign a random value between -280 and 280.​
 
-**Task 9b**:
-Create a function 'sum_of_squares()' that will take in 2 numbers and
-return the sum of each of the number squared. You must use the
-'square()' function within the 'sum_of_squares()' function.
+    2. Create a ‘y’ variable and assign a random value between -280 and 280.​
 
-Example:
-sum_of_squares(3, 4) >>> 25
+    3. Using ‘.goto()’, position your turtle at the random coordinate ‘x’ and ‘y’ generated.​
+
+    4. Using a ‘for’ loop and the movement commands, draw a 5x5 small square​
+
+    5. Reposition your turtle object 40 steps lower than the randomly generated x and y coordinate​
+
+    6. Write the coordinate of the square using ‘.write()’​
+
+## Task 6: Follow the Edge
+Using ‘.xcor()’ and ‘.ycor()’ to detect the edge, make the turtle move along the perimeter of the screen, turning at the corners.​
+
+1. Import the ‘turtle’ library​
+
+2. Create a 400x400 screen using ‘.Screen()’ and ‘.setup’​
+
+3. Create 2 variables that holds the x and y limit​
+
+4. Using ‘.goto()’, position the turtle at the lower left corner of the limit​
+
+5. Within a forever loop, use the following format for each direction, turn the turtle at each corner of the 4 corners:​
+- While ‘x’ coordinate of turtle is less than ‘x’ limit,​
+- Move forward​
+- Turn left 90​
